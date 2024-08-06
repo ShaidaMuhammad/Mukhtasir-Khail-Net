@@ -1,5 +1,3 @@
-Here's an enhanced and more comprehensive `README.md` file for your project:
-
 # Activity Recognition Model
 
 This project is for training a deep learning model to recognize different activities using time series data. The project uses a dataset containing sensor data for different activities and applies a deep learning model to classify the activities.
