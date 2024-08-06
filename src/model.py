@@ -1,5 +1,24 @@
+# src/model.py
+
+import tensorflow as tf
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Conv1D, add, Dense, GlobalAveragePooling1D
+
+
+def set_memory_growth():
+    """
+    Configure TensorFlow to use GPU memory growth if available.
+    """
+    gpus = tf.config.experimental.list_physical_devices('GPU')
+    if gpus:
+        try:
+            for gpu in gpus:
+                tf.config.experimental.set_memory_growth(gpu, True)
+            print(f"{len(gpus)} GPU(s) found and memory growth set.")
+        except RuntimeError as e:
+            print(f"Error setting memory growth: {e}")
+    else:
+        print("No GPU found. Using CPU.")
 
 
 def create_model(input_shape, num_classes):
@@ -31,3 +50,12 @@ def create_model(input_shape, num_classes):
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
     return model
+
+
+if __name__ == '__main__':
+    set_memory_growth()
+    # Example usage
+    input_shape = (256, 6)  # Example input shape
+    num_classes = 6  # Example number of classes
+    model = create_model(input_shape, num_classes)
+    model.summary()
