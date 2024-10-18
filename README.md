@@ -1,6 +1,6 @@
 # Mukhtasir-Khail-Net: An Ultra-Efficient Convolutional Neural Network for Sports Activity Recognition with Wearable Inertial Sensors
 
-This project is for training a deep learning model to recognize different activities using time series data. The project uses a dataset containing sensor data for different activities and applies a deep learning model to classify the activities.
+This project is for training a deep learning model to recognize different sports activities using time series data. The project uses a dataset containing sensor data for different activities and applies a deep learning model to classify the activities.
 
 ## Structure
 
