@@ -99,12 +99,28 @@ The `train.py` script trains the model using K-Fold cross-validation and evaluat
 
 If you wish to contribute to this project, please follow these steps:
 
-Papers reference should go here
+1. Fork the repository.
+2. Create a branch for your feature or bug fix.
+3. Commit your changes to the branch.
+4. Submit a pull request.
+
+## Citation
+
+If you use this project in your research, please cite the following paper:
+
+```bibtex
+@INPROCEEDINGS{10740217,
+  author={Imran, Hamza Ali and Muhammad, Shaida and Wazir, Saad and Ikram, Ataul Aziz and Arshad, Obaidullah},
+  booktitle={2024 4th International Conference on Digital Futures and Transformative Technologies (ICoDT2)}, 
+  title={Mukhtasir-Khail-Net: An Ultra-Efficient Convolutional Neural Network for Sports Activity Recognition with Wearable Inertial Sensors}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Accuracy;Inertial sensors;Internet of Medical Things;Signal processing;Internet;Human activity recognition;Wearable sensors;Monitoring;Sports;Diseases;Sports Activity Recognition;Smart-Wearable;Internet of Health Things;Internet of Medical Things;Human Behavioural Analysis;Inertial Sensors Signal Processing;Embedded Sensors;Inertial Sensors},
+  doi={10.1109/ICoDT262145.2024.10740217}}
+```
 
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
----
-
-By organizing the project in this manner, the code is more maintainable, understandable, and ready to be pushed to GitHub.
